@@ -51,8 +51,7 @@ for orig in origins:
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=unique_origins,
-    allow_origin_regex=r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$",
+    allow_origins=["*"],  # Разрешаем отовсюду для стабильной работы
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
