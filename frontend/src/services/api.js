@@ -1,4 +1,5 @@
 let currentBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL || "https://mythos-ai-86ki.onrender.com";
 
 async function requestWithFallback(endpoint, options = {}) {
   try {
